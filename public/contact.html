@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cloud Strife</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Oranienbaum|Press+Start+2P|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/css.css">
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" name="menu_cntrl" id="menu_cntrl" class="menu_cntrl" value="value">
+      <label for="menu_cntrl" class="menu_cntrl_label">Menu</label>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li class="current"><a href="#">contact</a></li>
+        <li><a href="bio.html">bio</a></li>
+        <li><a href="resume.html">resume</a></li>
+      </ul>
+    </nav>
+    <header>
+      <img src="img/cloudstrife-06.jpg" alt="Cloud Strife">
+      <h1>Cloud Strife</h1>
+    </header>
+
+    <section>
+      <h2>Contact Strife Delivery Service</h2>
+      <form action="my-form.php" method="post">
+        <div class="info-customer">
+          <h3>You name it, we deliver it.</h3>
+          <p>Leave a message at 7<sup>th</sup> Heaven Bar or contact us via the form below.</p>
+          <label><input type="text" name="name" placeholder="Name"></label>
+          <label><input type="tel" name="phone" placeholder="Phone Number"></label>
+          <label><input type="email" name="email" placeholder="Email Address"></label>
+        </div>
+        <div class="info-job">
+          <h3>Job Info</h3>
+          <label><input type="radio" name="jobtype" value="Delivery"> Delivery</label>
+          <label><input type="radio" name="jobtype" value="Mercenary"> Mercenary</label>
+          <label><input type="date" name="date" value="Date"></label>
+          <textarea name="description" placeholder="Description" rows="8" cols="80"></textarea>
+        </div>
+        <label><input type="submit" value="Send" class="formbutton"></label>
+      </form>
+    </section>
+
+    <footer>
+      <p>All information shamelessly borrowed from a variety of sites for educational purposes.</p>
+      <p><sub>1</sub> from <a href="https://en.wikipedia.org/wiki/Cloud_Strife" target="_blank">wikipedia</a></p>
+    </footer>
+  </body>
+</html>
