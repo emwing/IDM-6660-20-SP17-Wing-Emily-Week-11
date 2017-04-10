@@ -1,0 +1,56 @@
+section, footer {
+  margin: 0 auto;
+  padding: 2em 1em;
+  max-width: 100%;
+
+  @include phablet {
+    padding: 2em;
+  }
+  @include tablet {
+    padding: 2em 0;
+    max-width: 75%;
+  }
+  @include desktop {
+    max-width: 45rem;
+  }
+}
+
+section article { position: relative; }
+
+article img {
+  max-width: 100%;
+
+  @include tablet {
+    float: right;
+    padding: 0 0 1rem 1rem;
+  }
+}
+
+.skills:not(:last-child) { border-bottom: 0.0625rem solid $silver; }
+
+form label {
+  margin: 0.75rem 0;
+  display: block;
+}
+
+form input[type=text],
+form input[type=tel],
+form input[type=email],
+form input[type=date],
+textarea {
+  width: 100%;
+
+  @include tablet {
+    width: 75%;
+  }
+}
+
+form input[type=text],
+form input[type=tel],
+form input[type=email],
+form input[type=date] { height: 2rem; }
+
+footer {
+  text-align: center;
+  font-size: 0.875rem;
+}

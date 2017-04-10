@@ -1,0 +1,60 @@
+html {
+  background-color: $black;
+  color: #fff;
+  font-family: $copy-font;
+  font-size: 16px;
+  @include tablet { font-size: 18px; }
+  line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font;
+  margin: 1rem 0;
+}
+p { margin: 0.75rem 0; }
+
+nav {
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: $black;
+  text-align: center;
+  font-family: $menu-font;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+nav, header { border-bottom: 0.25rem ridge $silver; }
+
+header {
+  margin-top: 3rem;
+  position: relative;
+  max-width: 100%;
+  height: 75vh;
+  text-align: center;
+  overflow: hidden;
+}
+header img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 75vh;
+}
+header h1 {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  width: 100%;
+  transform: translateX(-50%);
+  font-size: 2.875rem;
+  line-height: 1;
+  text-shadow: 0.0625rem 0.0625rem $black;
+
+  @include tablet {
+    transform: translateX(-50%);
+    font-size: 4rem;
+  }
+}
